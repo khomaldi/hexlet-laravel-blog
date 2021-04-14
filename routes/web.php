@@ -43,3 +43,7 @@ Route::get('articles/{id}/edit', [ArticleController::class, 'edit'])
 // Метод PATCH
 Route::patch('articles/{id}', [ArticleController::class, 'update'])
     ->name('articles.update');
+
+// Метод DELETE
+Route::delete('articles/{id}', [ArticleController::class, 'destroy'])
+    ->name('articles.destroy');
